@@ -1,0 +1,7 @@
+version: "3"
+
+services:
+  systems:
+    image: cs:latest
+    volumes:
+      - .:/home/cs392
