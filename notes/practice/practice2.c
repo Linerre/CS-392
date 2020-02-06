@@ -1,5 +1,8 @@
 #include <stdio.h>
 
+// Robert Schaedler III
+// I pledge my honor that I have abided by the Stevens Honor System.
+
 int main(int arc, char **argv) {
     // [1] Create an integer variable
     int x;
