@@ -15,4 +15,4 @@ gcc <file.c> -o <new name>
 
 ## Lectures/Notes
 
-- (I/O part 1)[lecture07-input-output] (standard output & header files)
+- [I/O part 1](lecture07-input-output) (standard output & header files)
