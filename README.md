@@ -16,3 +16,4 @@ gcc <file.c> -o <new name>
 ## Lectures/Notes
 
 - [I/O part 1](lectures/lecture07-input-output.md) (standard output & header files)
+- [I/O part 2](lectures/lecture08-input-output.md) (format strings & input)
