@@ -4,4 +4,4 @@ services:
   systems:
     image: cs:latest
     volumes:
-      - .:/home/cs392
+      - .:/home
