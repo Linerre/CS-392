@@ -1,1 +1,1 @@
-docker-compose run --rm systems bash
+docker-compose run --rm systems bash -c 'cd /home && bash'
