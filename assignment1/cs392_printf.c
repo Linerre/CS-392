@@ -1,3 +1,11 @@
+/*******************************************************************************
+ * Name        : cs392_printf.c
+ * Author      : Robert Schaedler III
+ * Date        : Feb. 28, 2020
+ * Description : Implemenatation of printf().
+ * Pledge      : I pledge my honor that I have abided by the Stevens Honor System.
+ ******************************************************************************/
+
 #include <stdarg.h>
 #include <stdio.h>
 
