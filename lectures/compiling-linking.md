@@ -51,3 +51,32 @@ Program symbols are either strong or weak.
   - References to the weak symbol resolve to the strong symbol
 - Rule 3: If there are multiple weak symbols, pick an arbitrary one
   - Can override this with `gcc –fno-common`
+
+## Compiling and linking libraries
+
+Static libraries (`.a` archive files)
+- Concatenate related relocatable object files into a single file with an index (called an *archive*)
+- Linker tries to resolve unresolved external references by looking for the symbols in one or more archives
+- If an archive member file resolves reference, link it  into the executable
+
+Archiver
+- Allows incremental updates
+- Recompile function that changes and replace `.o` file in archive
+
+### Using static libraries
+
+Linker’s algorithm for resolving external references:
+
+Scan for `.o` files and `.a` files in the command line order. During the scan, keep a list of the current unresolved references. As each new `.o` or `.a` file/obj is encountered, try to resolve each unresolved reference in the list against the symbols defined in obj. If any entries in the unresolved list at end of scan, then error.
+
+### Shared libraries
+
+Static libraries have the following disadvantages:
+- Duplication in the stored executables (every function needs libc)
+- Duplication in the running executables◦Minor bug fixes of system libraries require each application to explicitly relinkModern solution: 
+Shared Libraries 
+- Object files that contain code and data that are loaded and linked into an application dynamically, at either load-time or run-time (also called: dynamic link libraries, DLLs, `.so` files)
+- Dynamic linking can occur when executable is first loaded and run (load-time linking)
+- Common case for Linux, handled automatically by the dynamic linker (`ld-linux.so`)
+- Standard C library (libc.so) usually dynamically linkedDynamic linking can also occur after program has begun (run-time linking: in Linux, this is done by calls to the `dlopen()` interface)
+- Shared library routines can be shared by multiple processes.
