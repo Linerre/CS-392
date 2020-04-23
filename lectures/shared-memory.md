@@ -59,7 +59,7 @@ Process 1
 ```C
 while(true) {
     if (w == r) {
-        *data = 0; // read data
+        *data = 0; // write data
         w++;
     }
 }
@@ -69,7 +69,7 @@ Process 2
 ```C
 while(true) {
     if (w - r == 1) {
-        char a = *data;
+        char a = *data; // read data
         r++;
     }
 }
