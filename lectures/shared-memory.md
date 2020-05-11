@@ -1,4 +1,4 @@
-# Shared Memory
+# IPC Shared Memory
 
 A section of the physical memory that is shared by two processes. A section of the virtual memory of each process is allocated to the same piece of physical memory.
 
