@@ -94,12 +94,12 @@ In Unix-like operating systems, such as Linux, macOS X, and BSD, stderr is defin
 `errno` is a global integer variable set by libc functions. Whenever an error occurs it is set to a non-zero error number. It is never set to zero by libc, but you can modify it. Numbers are defined in `errno.h`. We can use `errno -l` to print the error message behind an error number.
 
 ```C
-char* strerror(interrnum);
+char* strerror(int errnum);
 ```
 Return a pointer to a string describing the error behind errnum.
 
 ```C
-void perror(constchar*s);
+void perror(const char*s);
 ```
 Produces an error message including the string s, colon, and a description of the last error based on the error number stored in errno perror(s) is equivalent to `printf(“%s: %s\n”, s, strerror(errno));` 
 
