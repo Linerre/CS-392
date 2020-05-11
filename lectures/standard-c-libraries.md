@@ -79,10 +79,10 @@ char* strtok (char * str, char * delimiters);
 
 ```C
 // returns length of the string (up to, but not including the ‘\0’ character)
-size_t strlen ( const char * str );
+size_t strlen (const char * str);
 
 // set first n bytes of memory block addressed by ptr to val
-void* memset (void* ptr, int val, size_t n );
+void* memset (void* ptr, int val, size_t n);
 ```
 
 ## General Purpose Functions
