@@ -1,3 +1,9 @@
+/*******************************************************************************
+ * Name        : task3.c
+ * Author      : Robert Schaedler III
+ * Pledge      : I pledge my honor that I have abided by the Stevens Honor System.
+ ******************************************************************************/
+
 /*
 	In the piece of code below, two pipes "fd1[2]" and "fd2[2]" are created between the parent and child process
 	The code for the parent process has been implemented. The parent will write an integer to pipe fd1 and read a string from pipe fd2

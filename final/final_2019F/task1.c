@@ -1,3 +1,9 @@
+/*******************************************************************************
+ * Name        : task1.c
+ * Author      : Robert Schaedler III
+ * Pledge      : I pledge my honor that I have abided by the Stevens Honor System.
+ ******************************************************************************/
+
 /* 
  * This program implements a multi-threading program:
  *Functionality Description:

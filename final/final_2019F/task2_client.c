@@ -1,3 +1,8 @@
+/*******************************************************************************
+ * Name        : task2_client.c
+ * Author      : Robert Schaedler III
+ * Pledge      : I pledge my honor that I have abided by the Stevens Honor System.
+ ******************************************************************************/
 
 /*
  * You are required to implement a function
